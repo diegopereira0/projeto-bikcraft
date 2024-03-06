@@ -1,3 +1,92 @@
-h1 {
-  color: blue;
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-bg {
+  background-color: #000000;
+}
+
+.header {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.header-menu a {
+  font-size: 1.125rem;
+  color: #ffffff;
+  display: inline-block;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 0.125rem;
+  width: 0px;
+  background: #ffffff;
+  margin-top: 0.25rem;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 1.25rem;
+  }
+
+  .header-menu a {
+    background-color: #111111;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+  }
+
+  .header-menu a:hover {
+    background: #2e2e2e2e;
+  }
+
+  .header-menu a:after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 0.75rem;
+  }
+  .header-menu a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
 }
