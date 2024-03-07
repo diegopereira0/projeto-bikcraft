@@ -1,0 +1,14 @@
+.heading-2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.125;
+  font-weight: 600;
+}
+
+.large-regular {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
