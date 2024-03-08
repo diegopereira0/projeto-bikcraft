@@ -20,10 +20,6 @@
 }
 
 .header-menu a {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 1.125rem;
-  color: #ffffff;
   display: inline-block;
   padding: 1rem 0;
   position: relative;
@@ -34,7 +30,7 @@
   display: block;
   height: 0.125rem;
   width: 0px;
-  background: #ffffff;
+  background: var(--neutral-color-000);
   margin-top: 0.25rem;
   transition: 0.3s;
   position: absolute;
