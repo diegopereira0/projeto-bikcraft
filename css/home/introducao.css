@@ -4,11 +4,6 @@
 }
 
 .introducao {
-  max-width: 75rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  margin-left: auto;
-  margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 2.5rem;
@@ -31,7 +26,6 @@
   height: 100%;
   object-fit: cover;
 }
-
 
 @media (max-width: 800px) {
   .introducao-bg {
