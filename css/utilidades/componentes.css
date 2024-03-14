@@ -22,6 +22,26 @@
   background: linear-gradient(#ffb60d, #e59317);
 }
 
+.link-cta {
+  display: inline-block;
+  color: var(--primary-color);
+  font: 600 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.link-cta::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: currentColor;
+  height: 4px;
+}
+
+.link-cta:hover {
+  color: var(--neutral-color-000);
+}
+
 @media (max-width: 600px) {
   .btn {
     font-size: 1rem;
