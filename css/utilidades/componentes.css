@@ -16,10 +16,20 @@
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  max-width: max-content;
 }
 
 .btn:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.btn.btn-secondary {
+  background: var(--neutral-color-1000);
+  color: var(--neutral-color-000);
+}
+
+.btn.btn-secondary:hover {
+  background: var(--neutral-color-900);
 }
 
 .link-cta {
