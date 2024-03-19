@@ -1,0 +1,70 @@
+.depoimento {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.depoimento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.depoimento-conteudo {
+  padding: 2.5rem 2.5rem 5rem 5rem;
+  align-self: end;
+}
+
+.depoimento-conteudo p {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  max-width: 32ch;
+  position: relative;
+}
+
+.depoimento p::before,
+.depoimento p::after {
+  font-size: 5rem;
+  color: var(--primary-color-100);
+  position: absolute;
+}
+
+.depoimento p::before {
+  content: "“";
+  left: -36px;
+  top: -20px;
+}
+
+.depoimento p::after {
+  content: "”";
+  height: fit-content;
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+  }
+
+  .depoimento-conteudo {
+    padding: 2.5rem 4rem;
+    justify-self: center;
+  }
+
+  .depoimento-conteudo p {
+    max-width: 100%;
+  }
+
+  .depoimento img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .depoimento-conteudo {
+    padding: 2.25rem 1.25rem;
+  }
+}
