@@ -19,6 +19,15 @@
   transition: 0.3s;
 }
 
+.btn.secundario {
+  background: var(--support-1000);
+  color: var(--support-200);
+}
+
+.btn.secundario:hover {
+  background: var(--support-900);
+}
+
 .introducao .btn:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
