@@ -17,6 +17,9 @@
   color: var(--primary-400);
   text-transform: uppercase;
   transition: 0.3s;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
