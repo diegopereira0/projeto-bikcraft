@@ -1,5 +1,5 @@
 .introducao-bg {
-  background: var(--support-1200);
+  background: var(--support-1200) url('../../img/dec/bottom-left.svg') no-repeat bottom 160px left 20px;
   color: var(--support-0);
   box-shadow: inset 0 -120px var(--support-0);
 }
